@@ -1,0 +1,5 @@
+What are the most important parts of a business plan?
+
+I want to build a business plan to offer a product that you can use to generate walking tour recommendations. A travel agency submits a list of locations and an email address for a customer that purchased a trip. The service will return 1-3 walking tour recommendations of roughly 1km in length. I want to monetize it. Write me a basic plan to get started.
+
+What are the key risks I should be aware of if I try to build this product?
