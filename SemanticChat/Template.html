@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Walking Tours for {{LOCATION}}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #e4e4e4;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin: 10px 0;
+            font-size: 1.1em;
+            line-height: 1.5;
+        }
+
+            p strong {
+                color: #555;
+            }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const scrollLinks = document.querySelectorAll('.scroll-link');
+
+            for (let link of scrollLinks) {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const href = link.getAttribute('href');
+                    const target = document.querySelector(href);
+
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+        {{BODY}}
+    </div>
+
+</body>
+
+</html>

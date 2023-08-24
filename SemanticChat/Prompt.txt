@@ -1,0 +1,11 @@
+Given the city name of "{{$userInput}}", 
+
+provide a recommendation for a self-guided walking tour that spans 1-2km. 
+Format the recommendation exclusively as an HTML fragment with inline styling. 
+
+This fragment should include a Title, Starting Location (an address that can be used in GPS), 
+Ending Location (also usable in GPS), and a 
+Summary (limited to a few sentences) describing the essence of the tour. 
+
+Ensure there's no extraneous content outside of the HTML. This is critical. Do not offer a preamble of any length, do not recap anything. Just a raw HTML fragment or your response is entirely useless to me.
+If no appropriate tour is available, return an empty string.

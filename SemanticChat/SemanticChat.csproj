@@ -12,4 +12,13 @@
     <PackageReference Include="Spectre.Console" Version="0.47.1-preview.0.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Prompt.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Template.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
